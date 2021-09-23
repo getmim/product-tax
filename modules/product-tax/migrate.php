@@ -13,6 +13,52 @@ return [
             ]
         ]
     ],
+    'Purchase\\Model\\Purchase' => [
+        'fields' => [
+            'tax' => [
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => true,
+                    'null' => false,
+                    'default' => 0
+                ],
+                'index' => 9500
+            ]
+        ]
+    ],
+    'Purchase\\Model\\PurchaseProduct' => [
+        'fields' => [
+            'total_before_tax' => [
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => true,
+                    'null' => false,
+                    'default' => 0
+                ],
+                'index' => 5500
+            ],
+            'tax_percent' => [
+                'type' => 'SMALLINT',
+                'attrs' => [
+                    'unsigned' => true,
+                    'null' => false
+                ],
+                'index' => 5600
+            ],
+            'tax_amount' => [
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => true,
+                    'null' => false,
+                    'default' => 0
+                ],
+                'index' => 5700
+            ]
+        ]
+    ],
     'Cart\\Model\\Cart' => [
         'fields' => [
             'tax' => [
