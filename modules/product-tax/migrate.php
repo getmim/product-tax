@@ -43,7 +43,8 @@ return [
                 'type' => 'SMALLINT',
                 'attrs' => [
                     'unsigned' => true,
-                    'null' => false
+                    'null' => false,
+                    'default' => 0
                 ],
                 'index' => 5600
             ],
@@ -89,7 +90,8 @@ return [
                 'type' => 'SMALLINT',
                 'attrs' => [
                     'unsigned' => true,
-                    'null' => false
+                    'null' => false,
+                    'default' => 0
                 ],
                 'index' => 5600
             ],

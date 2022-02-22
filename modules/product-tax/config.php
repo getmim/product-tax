@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'product-tax',
-    '__version' => '0.2.0',
+    '__version' => '0.2.1',
     '__git' => 'git@github.com:getmim/product-tax.git',
     '__license' => 'MIT',
     '__author' => [
